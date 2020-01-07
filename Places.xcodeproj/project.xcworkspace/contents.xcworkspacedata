@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:HDAugmentedReality"
+      name = "HDAugmentedReality">
+      <Group
+         location = "group:Classes"
+         name = "Classes">
+         <Group
+            location = "group:External"
+            name = "External">
+            <FileRef
+               location = "group:CameraView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:TouchView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:UIView+utility.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Radar"
+            name = "Radar">
+            <FileRef
+               location = "group:RadarMapViewSupport.swift">
+            </FileRef>
+            <FileRef
+               location = "group:RadarMapView.xib">
+            </FileRef>
+            <FileRef
+               location = "group:SegmentedIndicatorRing.swift">
+            </FileRef>
+            <FileRef
+               location = "group:PreciseIndicatorRing.swift">
+            </FileRef>
+            <FileRef
+               location = "group:RadarMapView.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Main"
+            name = "Main">
+            <FileRef
+               location = "group:ARAccessory.swift">
+            </FileRef>
+            <Group
+               location = "group:Presenter"
+               name = "Presenter">
+               <FileRef
+                  location = "group:ARPresenter.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:ARPresenterTransform.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Annotations"
+               name = "Annotations">
+               <FileRef
+                  location = "group:ARAnnotation.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:ARAnnotationView.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Tracking"
+               name = "Tracking">
+               <FileRef
+                  location = "group:ARTrackingManager.swift">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ARConfiguration.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ARViewController.swift">
+            </FileRef>
+            <Group
+               location = "group:Utility"
+               name = "Utility">
+               <FileRef
+                  location = "group:ARMath.swift">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Debug"
+            name = "Debug">
+            <FileRef
+               location = "group:DebugMapViewController.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Resources"
+         name = "Resources">
+         <FileRef
+            location = "group:ARViewController.xib">
+         </FileRef>
+         <FileRef
+            location = "group:DebugMapViewController.xib">
+         </FileRef>
+         <Group
+            location = "group:Images.xcassets"
+            name = "Images.xcassets">
+            <Group
+               location = "group:radar_shrink.imageset"
+               name = "radar_shrink.imageset">
+               <FileRef
+                  location = "group:radar_shrink.pdf">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:close_button.imageset"
+               name = "close_button.imageset">
+               <FileRef
+                  location = "group:close_button.pdf">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:radar_zoom_in.imageset"
+               name = "radar_zoom_in.imageset">
+               <FileRef
+                  location = "group:radar_zoom_in.pdf">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:radarUserAnnotation.imageset"
+               name = "radarUserAnnotation.imageset">
+               <FileRef
+                  location = "group:userRadarAnnotation@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:userRadarAnnotation@2x.png">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:radar_expand.imageset"
+               name = "radar_expand.imageset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:radar_expand.pdf">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <Group
+               location = "group:radarAnnotation.imageset"
+               name = "radarAnnotation.imageset">
+               <FileRef
+                  location = "group:radarAnnotation.pdf">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:radar_zoom_out.imageset"
+               name = "radar_zoom_out.imageset">
+               <FileRef
+                  location = "group:radar_zoom_out.pdf">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+   </Group>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>
