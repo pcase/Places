@@ -84,13 +84,13 @@
 		8F7404451DCDD569009A6F0B /* Places */ = {
 			isa = PBXGroup;
 			children = (
-				DBFABAEF23C43F710002E833 /* HDAugmentedReality */,
 				8F7404461DCDD569009A6F0B /* AppDelegate.swift */,
 				8F7404481DCDD569009A6F0B /* ViewController.swift */,
 				DBFABAB823C429D80002E833 /* AnnotationView.swift */,
 				8F74047E1DCF31B0009A6F0B /* PlacesLoader.swift */,
 				8F74047F1DCF31B0009A6F0B /* Place.swift */,
 				DBFABAB623C423780002E833 /* PlaceAnnotation.swift */,
+				DBFABAEF23C43F710002E833 /* HDAugmentedReality */,
 				8F74044A1DCDD569009A6F0B /* Main.storyboard */,
 				8F74044D1DCDD569009A6F0B /* Assets.xcassets */,
 				8F74044F1DCDD569009A6F0B /* LaunchScreen.storyboard */,
