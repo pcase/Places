@@ -309,7 +309,6 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate
      */
     open func setAnnotations(_ annotations: [ARAnnotation])
     {
-        print("setAnnotations")
         var validAnnotations: [ARAnnotation] = []
         // Don't use annotations without valid location
         for annotation in annotations
@@ -325,7 +324,6 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate
     
     open func getAnnotations() -> [ARAnnotation]
     {
-         print("getAnnotations")
         return self.annotations
     }
     
@@ -346,7 +344,6 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate
     /// Creates annotation views. All views are created at once, for active annotations. This reduces lag when rotating.
     fileprivate func createAnnotationViews()
     {
-        print("createAnnotationViews")
         var annotationViews: [ARAnnotationView] = []
         let activeAnnotations = self.activeAnnotations  // Which annotations are active is determined by number of properties - distance, vertical level etc.
         
@@ -398,7 +395,6 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate
     
     fileprivate func calculateDistanceAndAzimuthForAnnotations(sort: Bool, onlyForActiveAnnotations: Bool)
     {
-        print("calculateDistanceAndAzimuthForAnnotations: start")
         if self.trackingManager.userLocation == nil
         {
             return
@@ -411,14 +407,12 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate
         {
             if annotation.location == nil   // This should never happen bcs we remove all annotations with invalid location in setAnnotation
             {
-                print("calculateDistanceAndAzimuthForAnnotations: distanceFromUser1")
                 annotation.distanceFromUser = 0
                 annotation.azimuth = 0
                 continue
             }
             
             // Distance
-            print("calculateDistanceAndAzimuthForAnnotations: distanceFromUser2")
             annotation.distanceFromUser = annotation.location!.distance(from: userLocation)
             
             // Azimuth
@@ -431,18 +425,14 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate
             //self.annotations = self.annotations.sorted { $0.distanceFromUser < $1.distanceFromUser }
             
             let sortedArray: NSMutableArray = NSMutableArray(array: self.annotations)
-            print("calculateDistanceAndAzimuthForAnnotations: distanceFromUser3")
             let sortDesc = NSSortDescriptor(key: "distanceFromUser", ascending: true)
             sortedArray.sort(using: [sortDesc])
             self.annotations = sortedArray as [AnyObject] as! [ARAnnotation]
         }
-      
-      print("calculateDistanceAndAzimuthForAnnotations: end")
     }
     
     fileprivate func updateAnnotationsForCurrentHeading()
     {
-        print("updateAnnotationsForCurrentHeading")
         //===== Removing views not in viewport, adding those that are. Also removing annotations view vertical level > maxVerticalLevel
         let degreesDelta = Double(degreesPerScreen)
         
@@ -554,7 +544,6 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate
     
     fileprivate func calculateVerticalLevels()
     {
-        print("calculateVerticalLevels")
         // Lot faster with NS stuff than swift collection classes
         let dictionary: NSMutableDictionary = NSMutableDictionary()
         

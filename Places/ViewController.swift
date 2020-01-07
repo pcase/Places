@@ -49,7 +49,6 @@ class ViewController: UIViewController {
   }
   
   @IBAction func showARController(_ sender: Any) {
-    print("showARController")
     arViewController = ARViewController()
     // Set dataSource
     arViewController.dataSource = self
@@ -90,7 +89,6 @@ extension ViewController: CLLocationManagerDelegate {
         mapView.region = region
         // Start loading a list of POIs
         if !startedLoadingPOIs {
-          print("didUpdateLocations: Started loading POIs")
           startedLoadingPOIs = true
           let loader = PlacesLoader()
           loader.loadPOIS(location: location, radius: 1000) { placesDict, error in
@@ -108,15 +106,12 @@ extension ViewController: CLLocationManagerDelegate {
                             
                 let location = CLLocation(latitude: latitude, longitude: longitude)
                 // Create a Place object and append it to the places array
-                print("didUpdateLocations: Create Place")
                 let place = Place(location: location, reference: reference, name: name, address: address)
                 self.places.append(place)
                 // Create a PlaceAnnotation that will be used to show an annotation on the map view
-                print("didUpdateLocations: Create annotation")
                 let annotation = PlaceAnnotation(location: place.location!.coordinate, title: place.placeName)
                 // Add the annotation to the map view
                 DispatchQueue.main.async {
-                  print("didUpdateLocations: Add annotation")
                   self.mapView.addAnnotation(annotation)
                 }
               }

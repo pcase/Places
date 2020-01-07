@@ -21,13 +21,11 @@ class AnnotationView: ARAnnotationView {
   override func didMoveToSuperview() {
     super.didMoveToSuperview()
     
-    print("didMoveToSuperview")
     loadUI()
   }
   
   // Add and configure the labels
   func loadUI() {
-    print("loadUI")
     titleLabel?.removeFromSuperview()
     distanceLabel?.removeFromSuperview()
     
